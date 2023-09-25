@@ -3,7 +3,7 @@
         "id": "1",
         "picture": "https://i.ibb.co/6JG682c/Clothing.png",
         "title": "Used Clothing Drive",
-        "category": "Clothing",
+        "categoryItem": "Clothing",
         "categoryBgColor": "#3498db",
         "cardBgColor": "#ecf0f1",
         "textColor": "#333",
@@ -14,7 +14,7 @@
         "id": "2",
         "picture": "https://i.ibb.co/0jVm718/Education.png",
         "title": "Good education",
-        "category": "Education",
+        "categoryItem": "Education",
         "categoryBgColor": "#e67e22",
         "cardBgColor": "#f2dede",
         "textColor": "#444",
@@ -25,7 +25,7 @@
         "id": "3",
         "picture": "https://i.ibb.co/Q88SW6b/Food.png",
         "title": "Better Food for Everyone",
-        "category": "Food",
+        "categoryItem": "Food",
         "categoryBgColor": "#9b59b6",
         "cardBgColor": "#f5f5f5",
         "textColor": "#555",
@@ -36,11 +36,102 @@
         "id": "4",
         "picture": "https://i.ibb.co/KLjH6Dz/Health.png",
         "title": "Clean water for children",
-        "category": "Health",
+        "categoryItem": "Health",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#ecf0f1",
+        "textColor": "#666",
+        "description": "Efficient kitchen appliance for cooking enthusiasts.",
+        "price": "$129.99"
+    },
+
+    {
+        "id": "1",
+        "picture": "https://i.ibb.co/6JG682c/Clothing.png",
+        "title": "Used Clothing Drive",
+        "categoryItem": "Clothing",
+        "categoryBgColor": "#3498db",
+        "cardBgColor": "#ecf0f1",
+        "textColor": "#333",
+        "description": "A cutting-edge electronic gadget with advanced features.",
+        "price": "$199.99"
+    },
+    {
+        "id": "2",
+        "picture": "https://i.ibb.co/0jVm718/Education.png",
+        "title": "Good education",
+        "categoryItem": "Education",
+        "categoryBgColor": "#e67e22",
+        "cardBgColor": "#f2dede",
+        "textColor": "#444",
+        "description": "Fashionable clothing item for all occasions.",
+        "price": "$49.99"
+    },
+    {
+        "id": "3",
+        "picture": "https://i.ibb.co/Q88SW6b/Food.png",
+        "title": "Better Food for Everyone",
+        "categoryItem": "Food",
+        "categoryBgColor": "#9b59b6",
+        "cardBgColor": "#f5f5f5",
+        "textColor": "#555",
+        "description": "Elegant home decor item to beautify your living space.",
+        "price": "$79.99"
+    },
+    {
+        "id": "4",
+        "picture": "https://i.ibb.co/KLjH6Dz/Health.png",
+        "title": "Clean water for children",
+        "categoryItem": "Health",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#ecf0f1",
+        "textColor": "#666",
+        "description": "Efficient kitchen appliance for cooking enthusiasts.",
+        "price": "$129.99"
+    },
+
+    {
+        "id": "1",
+        "picture": "https://i.ibb.co/6JG682c/Clothing.png",
+        "title": "Used Clothing Drive",
+        "categoryItem": "Clothing",
+        "categoryBgColor": "#3498db",
+        "cardBgColor": "#ecf0f1",
+        "textColor": "#333",
+        "description": "A cutting-edge electronic gadget with advanced features.",
+        "price": "$199.99"
+    },
+    {
+        "id": "2",
+        "picture": "https://i.ibb.co/0jVm718/Education.png",
+        "title": "Good education",
+        "categoryItem": "Education",
+        "categoryBgColor": "#e67e22",
+        "cardBgColor": "#f2dede",
+        "textColor": "#444",
+        "description": "Fashionable clothing item for all occasions.",
+        "price": "$49.99"
+    },
+    {
+        "id": "3",
+        "picture": "https://i.ibb.co/Q88SW6b/Food.png",
+        "title": "Better Food for Everyone",
+        "categoryItem": "Food",
+        "categoryBgColor": "#9b59b6",
+        "cardBgColor": "#f5f5f5",
+        "textColor": "#555",
+        "description": "Elegant home decor item to beautify your living space.",
+        "price": "$79.99"
+    },
+    {
+        "id": "4",
+        "picture": "https://i.ibb.co/KLjH6Dz/Health.png",
+        "title": "Clean water for children",
+        "categoryItem": "Health",
         "categoryBgColor": "#e74c3c",
         "cardBgColor": "#ecf0f1",
         "textColor": "#666",
         "description": "Efficient kitchen appliance for cooking enthusiasts.",
         "price": "$129.99"
     }
+
 ]
