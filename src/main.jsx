@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
 import {
@@ -11,6 +10,7 @@ import Root from './component/Root/Root.jsx';
 import Home from './component/Home/Home.jsx';
 import Donation from './component/Donation/Donation.jsx';
 import Statistics from './component/Statistics/Statistics.jsx';
+import CardDetails from './component/CardDetails/CardDetails';
 
 
 const router = createBrowserRouter([
@@ -29,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element:<Statistics></Statistics>
+      },
+      {
+        path: "/cards/:id",
+        element: <CardDetails></CardDetails>,
+        loader: ()=> fetch('/data.json')
       }
     ]
   },
