@@ -15,10 +15,10 @@ const Donation = () => {
     return (
         <div className="flex flex-col  items-center justify-center " >
             <div className="grid grid-cols-1 px-2 lg:grid-cols-2 gap-6 mt-20 ">
-            {
-                showAll ? donationCards.map(card => <Cards key={card.id} card={card}></Cards>)
-                    : donationCards.slice(0, 4).map(card => <Cards key={card.id} card={card}></Cards>)
-            }
+                {
+                    showAll ? donationCards.map(card => <Cards key={card.id} card={card}></Cards>)
+                        : donationCards.slice(0, 4).map(card => <Cards key={card.id} card={card}></Cards>)
+                }
             </div>
 
             <div className="mt-6">
