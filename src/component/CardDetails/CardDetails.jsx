@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+
 
 
 const CardDetails = () => {
@@ -21,15 +23,27 @@ const CardDetails = () => {
         if (!getDontedCard) {
             donatedItems.push(card)
             localStorage.setItem('donation-items', JSON.stringify(donatedItems))
-            return alert('Item added')
+            Swal.fire(
+                'Item added',
+                '',
+                'success'
+              )
         } else {
             const isExist = getDontedCard.find(card => card.id === id)
             if (!isExist) {
                 donatedItems.push(...getDontedCard, card)
                 localStorage.setItem('donation-items', JSON.stringify(donatedItems))
-                return alert('Item added')
+                Swal.fire(
+                    'Item added',
+                    '',
+                    'success'
+                  )
             }else{
-                return alert('Duplicate Item')
+                Swal.fire(
+                    'Duplicate Item',
+                    '',
+                    'error'
+                  )
             }
         }
     }
