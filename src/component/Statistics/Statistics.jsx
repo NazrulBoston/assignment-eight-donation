@@ -1,6 +1,5 @@
-
-import  { PureComponent } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
+import { PureComponent } from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Label } from 'recharts';
 
 const CONSTANT_VALUE = 12; // Constant value
 const LOCAL_STORAGE_KEY = 'donation-items'; // Key for storing the changing value in localStorage
@@ -23,7 +22,11 @@ export default class Statistics extends PureComponent {
     const constantValueDegree = ((CONSTANT_VALUE - changingValueLength) * 30).toFixed(2);
     const changingValueDegree = (changingValueLength * 30).toFixed(2);
 
-    // Create the data array for the pie chart with updated labels
+    // Calculate the percentages
+    const constantValuePercentage = ((CONSTANT_VALUE - changingValueLength) / CONSTANT_VALUE) * 100;
+    const changingValuePercentage = (changingValueLength / CONSTANT_VALUE) * 100;
+
+    // Create the data array for the pie chart
     const data = [
       { name: 'Total Donation', value: parseFloat(constantValueDegree) },
       { name: 'Your Donation', value: parseFloat(changingValueDegree) },
@@ -49,6 +52,10 @@ export default class Statistics extends PureComponent {
             <Legend verticalAlign="bottom" height={36} />
           </PieChart>
         </ResponsiveContainer>
+        <div style={{ textAlign: 'center' }}>
+          <p className='text-red-500'>Total Donation: {constantValuePercentage.toFixed(2)}%</p>
+          <p className='text-green-500'>Your Donation: {changingValuePercentage.toFixed(2)}%</p>
+        </div>
       </div>
     );
   }
